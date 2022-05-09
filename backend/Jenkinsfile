@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Pull Code') {
+            steps {
+                cleanWs()
+                git branch: 'main', url: 'https://github.com/trabnm1313/SDTE-final.git'
+            }
+        }
+        stage('Download Dependencies') {
+            steps {
+                dir("backend"){
+                    sh 'npm install'
+                }
+            }
+        }
+    }
+}
