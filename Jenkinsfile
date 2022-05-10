@@ -12,7 +12,7 @@ pipeline {
             steps{
                 bat "docker pull mongo"
                 bat "docker run -d -p 27000:27017 mongo"
-                bat "docker-compose up -d"
+                bat "docker-compose -f docker-compose-deploy.yml up -d"
             }
         }
     }
