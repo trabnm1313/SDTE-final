@@ -29,3 +29,8 @@
   * Branch: "*/main"
   * Jenkins Path: <Default Jenkinsfile Path>
   * Build pipeline and wait
+
+ หลังจากทำการ Install และ Deploy เสร็จแล้วสามารถกดเข้าสู่ หน้าใช้งานได้ที่
+ http//localhost:9000/
+ 
+ และสามารถ "ลงทะเบียนฉีดวัคซีน" ได้เลย โดยข้อมูลทีถูกบันถึงจะ ถูกบันทึกลงใน MongoDB Server โดยจะสร้าง Database และ Collection อัตโนมัติ
