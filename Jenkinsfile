@@ -5,7 +5,7 @@ pipeline {
         stage('Pull Code') {
             steps {
                 cleanWs()
-                git branch: 'dev', url: 'https://github.com/trabnm1313/SDTE-final.git'
+                git branch: 'main', url: 'https://github.com/trabnm1313/SDTE-final.git'
             }
         }
         stage('Docker build & deploy with docker-compose'){
