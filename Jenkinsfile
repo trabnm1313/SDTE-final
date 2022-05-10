@@ -8,11 +8,11 @@ pipeline {
                 git branch: 'dev', url: 'https://github.com/trabnm1313/SDTE-final.git'
             }
         }
-        stage('Download Dependencies') {
-            steps {
-                dir("backend"){
-                    bat 'npm install'
-                }
+        stage('Docker build & deploy with docker-compose'){
+            steps{
+                bat "docker pull mongo"
+                bat "docker run -d -p 27000:27017 mongo"
+                bat "docker-compose up -d"
             }
         }
     }
