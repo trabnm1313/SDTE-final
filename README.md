@@ -5,7 +5,17 @@
   * MongoDB Community Server
   * Docker 4.6.0+
 
-## Application installation steps
+## (Local) Test Application installation steps
+  * git clone https://www.github.com/trabnm1313/SDTE-final
+  * cd backend
+  * npm install
+  * node app.js
+  * cd ..
+  * cd frontend
+  * npm install
+  * npm run serve
+
+## (Docker) Application installation steps
   * git clone https://www.github.com/trabnm1313/SDTE-final
   * cd SDTE-final
   * docker pull mongo
